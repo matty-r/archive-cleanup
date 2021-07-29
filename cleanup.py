@@ -18,7 +18,7 @@ for folderPath in foldersWithRARs:
             deleteContentCommand = 'rm -rf "'+fullContentPath+'"'
             print(deleteContentCommand)
             # uncomment to actually delete it
-            subprocess.run(deleteContentCommand, shell=True, stdout=subprocess.PIPE)
+            # subprocess.run(deleteContentCommand, shell=True, stdout=subprocess.PIPE)
             if not os.path.exists(fullContentPath):
                 print("deleted successfully!")
             else:
